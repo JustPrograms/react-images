@@ -32,16 +32,30 @@ const View = (props: Props) => {
       css={getStyles('view', props)}
       className={className('view', { isFullscreen, isModal })}
     >
-      <Img
-        {...innerProps}
-        className={className('view-image', { isFullscreen, isModal })}
-        css={{
-          height: 'auto',
-          maxHeight: '100vh',
-          maxWidth: '100vw',
-          userSelect: 'none',
-        }}
-      />
+      {
+        data.type === 'img'
+          ? <Img
+            {...innerProps}
+            className={className('view-image', { isFullscreen, isModal })}
+            css={{
+              height: 'auto',
+              maxHeight: '100vh',
+              maxWidth: '100vw',
+              userSelect: 'none',
+            }}
+          />
+          : <video
+            {...innerProps}
+            className={className('view-image', { isFullscreen, isModal })}
+            css={{
+              height: 'auto',
+              maxHeight: '100vh',
+              maxWidth: '100vw',
+              userSelect: 'none',
+            }}
+            src={data.src}
+          ></video>
+      }
     </Div>
   );
 };
