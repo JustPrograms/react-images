@@ -45,16 +45,18 @@ const View = (props: Props) => {
             }}
           />
           : <video
-            {...innerProps}
+            controls
             className={className('view-image', { isFullscreen, isModal })}
-            css={{
+            style={{
               height: 'auto',
               maxHeight: '100vh',
               maxWidth: '100vw',
               userSelect: 'none',
             }}
-            src={data.src}
-          ></video>
+          >
+            <source src={data.src} type="video/mp4" />
+
+          </video>
       }
     </Div>
   );
