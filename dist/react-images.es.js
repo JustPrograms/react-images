@@ -808,9 +808,7 @@ var View$1 = function View$$1(props) {
           height: 'auto',
           maxHeight: '90vh',
           maxWidth: '75vw',
-          userSelect: 'none',
-          marginLeft: 'auto',
-          marginRight: 'auto'
+          userSelect: 'none'
         }
       },
       glam('source', { src: data.src, type: 'video/mp4' })

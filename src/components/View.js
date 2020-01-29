@@ -52,8 +52,6 @@ const View = (props: Props) => {
               maxHeight: '90vh',
               maxWidth: '75vw',
               userSelect: 'none',
-              marginLeft: 'auto',
-              marginRight: 'auto',
             }}
           >
             <source src={data.src} type="video/mp4" />
