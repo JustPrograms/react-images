@@ -39,8 +39,8 @@ const View = (props: Props) => {
             className={className('view-image', { isFullscreen, isModal })}
             css={{
               height: 'auto',
-              maxHeight: '100vh',
-              maxWidth: '100vw',
+              maxHeight: '90vh',
+              maxWidth: '75vw',
               userSelect: 'none',
             }}
           />
@@ -49,9 +49,11 @@ const View = (props: Props) => {
             className={className('view-image', { isFullscreen, isModal })}
             style={{
               height: 'auto',
-              maxHeight: '100vh',
-              maxWidth: '100vw',
+              maxHeight: '90vh',
+              maxWidth: '75vw',
               userSelect: 'none',
+              marginLeft: 'auto',
+              marginRight: 'auto',
             }}
           >
             <source src={data.src} type="video/mp4" />

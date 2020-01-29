@@ -798,8 +798,8 @@ var View$1 = function View$$1(props) {
       className: className('view-image', { isFullscreen: isFullscreen, isModal: isModal }),
       css: {
         height: 'auto',
-        maxHeight: '100vh',
-        maxWidth: '100vw',
+        maxHeight: '90vh',
+        maxWidth: '75vw',
         userSelect: 'none'
       }
     })) : glam(
@@ -809,9 +809,11 @@ var View$1 = function View$$1(props) {
         className: className('view-image', { isFullscreen: isFullscreen, isModal: isModal }),
         style: {
           height: 'auto',
-          maxHeight: '100vh',
-          maxWidth: '100vw',
-          userSelect: 'none'
+          maxHeight: '90vh',
+          maxWidth: '75vw',
+          userSelect: 'none',
+          marginLeft: 'auto',
+          marginRight: 'auto'
         }
       },
       glam('source', { src: data.src, type: 'video/mp4' })
